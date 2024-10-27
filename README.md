@@ -5,29 +5,38 @@ Bits and tricks for FreeBSD tests
 ## How to FreedBSD
 System components install:
  - lib32
+
 Partition: 
 - Auto ZFS
 - Encrypt disk (optional)
+
 Network:
 - ipv4 ok
 - ipv6 ok
+
 Time & Timezone:
 - up to you
+
 Services:
 - sshd
 - ntpd
 - ntp on boot
+
 Hardening:
 - random_pid
 - clear_tmp
+
 Users:
 - Add a user for you !
 Add your user to group wheel
+
 Install:
 - Let install and reboot
 
 First boot:
+
 login as root.
+
 First config is easier if made from root.
 FreeBSD usage is different from GNU/Linux
 you leave the base system intact and you put your version of config files in /usr/local/etc
@@ -36,7 +45,7 @@ updating packages informations
 
 ## Creating our pkg config
 ### https://docs.freebsd.org/en/books/handbook/ports/#ports
-`mkdir -p /usr/local/etc/pkg/repos
+`mkdir -p /usr/local/etc/pkg/repos;
 cp /etc/pkg/FreeBSD.conf /usr/local/etc/pkg/repos/`
 
 edit FreeBSD.conf and replace quarterly by latest (we love taking risks)
