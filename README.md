@@ -103,3 +103,7 @@ doas pw groupmod video -m sfoutrel`
 pkg install virtualbox-ose-additions
 doas sysrc vboxservice_enable=YES
 doas sysrc vboxguest_enable=YES
+
+# Docker et vscode
+https://wiki.freebsd.org/Docker
+pkg install vscode
